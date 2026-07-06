@@ -1,5 +1,5 @@
 """
-Game Catalog - Version 1
+Game library - Version 1
 
 A simple command-line application written in Python.
 
