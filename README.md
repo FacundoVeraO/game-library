@@ -2,28 +2,63 @@
 
 Game Library is a command-line application written in Python that allows users to manage a personal video game catalog.
 
-The program lets users add games, search for them, track their status, record playtime, and rate completed games.
+The application lets users add games, search for them, update their information, track their progress, record playtime, rate completed games, and automatically save their data.
 
-## 🇪🇸 Language Note
+## ✨ Features
 
-The application interface and most of the code are written in Spanish, as this project was originally developed for Spanish-speaking users while learning Python.
+* Add games to a personal catalog.
+* Search games by name.
+* Display stored game information.
+* Update a game's status, playtime, and rating.
+* Delete games from the catalog.
+* Track game progress through different statuses:
 
-Future versions may include full English support.
+  * Pending
+  * In Progress
+  * Dropped
+  * Completed
+* Record playtime for played games.
+* Rate completed games.
+* Validate user input to prevent invalid data.
+* Automatically save and load the catalog using JSON files.
 
-## Features
+## 🚀 Version 2 Improvements
 
-- Add games to a personal catalog
-- Search games by name
-- Track game status (Pending, Playing, Dropped, Completed)
-- Record playtime
-- Rate completed games
-- Input validation for user data
+Compared to the first version, this update introduces:
 
-## Technologies
+* Persistent data storage using JSON.
+* Automatic loading and saving of the game catalog.
+* File handling with Python's built-in tools.
+* Separation of responsibilities through multiple modules.
+* Improved input validation.
+* Better organization and maintainability of the code.
 
-- Python 3
+## 🛠️ Technologies
 
-## How to Run
+* Python 3
+* JSON
+* File handling
+* Exception handling
+* Git and GitHub
+
+## 📂 Project Structure
+
+```
+game-library/
+│
+├── src/
+│   ├── main.py
+│   ├── catalog.py
+│   └── files.py
+│
+├── data/
+│   └── juegos.json
+│
+├── README.md
+└── .gitignore
+```
+
+## ▶️ How to Run
 
 Clone the repository:
 
@@ -31,34 +66,42 @@ Clone the repository:
 git clone https://github.com/FacundoVeraO/game-library.git
 ```
 
-Enter the project folder:
+Navigate to the project folder:
 
 ```bash
 cd game-library
 ```
 
-Run the program:
+Run the application:
 
 ```bash
-python main.py
+python src/main.py
 ```
 
-## Purpose
+## 🎯 Purpose
 
-This project was created as part of my learning process in Computer Science at UBA.
+This project was created as part of my learning process while studying Computer Science at UBA.
 
-It focuses on practicing:
+Its main goal is to practice and improve fundamental programming concepts, including:
 
-- Functions
-- Dictionaries
-- Loops
-- Input validation
-- Basic program structure
-- Git and GitHub workflow
+* Functions.
+* Dictionaries.
+* Loops.
+* Conditional logic.
+* Input validation.
+* Error handling.
+* File handling.
+* JSON data storage.
+* Code organization.
+* Git and GitHub workflow.
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Save data to files (JSON or similar)
-- Edit and delete games
-- Improve user interface
-- Add statistics and progress tracking
+Possible improvements for future versions:
+
+* Add a graphical user interface (GUI).
+* Add advanced search filters.
+* Add statistics and progress tracking.
+* Improve the user experience.
+* Add additional game information.
+* Implement more advanced data management features.
